@@ -1,19 +1,15 @@
-import * as React from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-
-async function init() {
-	const [sticker] = await miro.board.widgets.create({
-		type: 'sticker',
-		text: 'Hello, World!',
-	})
-
-	await miro.board.viewport.zoomToObject(sticker)
-}
+import AssetLibrary from './components/asset-library'
 
 function App() {
-	React.useEffect(() => {
-		init()
-	}, [])
+	return (
+		<div className="grid wrapper">
+			<div className="cs1 ce12">
+				<AssetLibrary />
+			</div>
+		</div>
+	)
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
