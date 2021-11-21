@@ -6,7 +6,7 @@ Miro is a multi-user digital collaborative artboard allowing teams to plan and c
 toolset only supports 2d objects, and we believe this is restricting, by adding 3 dimensional functionality we allow
 more complex ideas to be conveyed in an easier to understand and less messy way.
 
-## Brief intro
+[Watch the brief intro on YouTube.](https://www.youtube.com/watch?v=0POkQPo3YKc)
 
 ## What it does
 
