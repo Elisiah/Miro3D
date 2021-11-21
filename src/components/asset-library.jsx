@@ -72,9 +72,11 @@ function RenderObject({ src }) {
 				Snapshot
 			</button>
 			{snapshots.length > 0 && (
-				<div id="snapshot">
+				<div>
 					{snapshots.map((snapshot, i) => (
-						<img key={i} style={{ width: 100, height: 100 }} src={snapshot} />
+						<div id="snapshot" key={i}>
+							<img style={{ width: 100, height: 100 }} src={snapshot} />
+						</div>
 					))}
 				</div>
 			)}
@@ -91,7 +93,7 @@ function AssetLibrary() {
 	}, [fileInputRef])
 
 	const handleUploadedFile = useCallback(
-		async (event) => {
+		async (_) => {
 			const file = fileInputRef.current.files[0]
 			const base64 = await toBase64(file)
 			setUploadedFile(base64)
